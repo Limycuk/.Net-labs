@@ -88,12 +88,12 @@ namespace BinaryTree
             }
         }
 
-        public IEnumerable Inorder()
+        public IEnumerable<T> Inorder()
         {
             foreach (T item in Inorder(BinaryTree)) yield return item;
         }
 
-        IEnumerable Inorder(TreeItem<T> node)
+        IEnumerable<T> Inorder(TreeItem<T> node)
         {
             if (node != null)
             {
@@ -103,12 +103,12 @@ namespace BinaryTree
             }
         }
 
-        public IEnumerable Postorder()
+        public IEnumerable<T> Postorder()
         {
             foreach (T item in Postorder(BinaryTree)) yield return item;
         }
 
-        IEnumerable Postorder(TreeItem<T> node)
+        IEnumerable<T> Postorder(TreeItem<T> node)
         {
             if (node != null)
             {
