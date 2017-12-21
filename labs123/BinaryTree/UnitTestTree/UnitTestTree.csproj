@@ -48,9 +48,11 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UnitTestPointTree.cs" />
     <Compile Include="UnitTestStringTree.cs" />
     <Compile Include="UnitTestNumberTree.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTestStudentTree.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
