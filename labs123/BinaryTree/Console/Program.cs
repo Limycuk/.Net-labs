@@ -13,9 +13,4 @@ namespace Console
             studentInterface.StartMenu();
         }
     }
-
-    class Rr<T>
-    {
-
-    }
 }
