@@ -62,6 +62,10 @@
       <Project>{EA367061-03BB-40CA-9FCF-F9327A2A93FD}</Project>
       <Name>BinaryTree</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Comparer\Comparer.csproj">
+      <Project>{318307C1-7052-47BE-9D21-0C7D67B5A74D}</Project>
+      <Name>Comparer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Substance\Substance.csproj">
       <Project>{3D40DBB5-49D8-43FD-86A7-A8189118E3A7}</Project>
       <Name>Substance</Name>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using BinaryTree;
+using Comparer;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Substance;
 

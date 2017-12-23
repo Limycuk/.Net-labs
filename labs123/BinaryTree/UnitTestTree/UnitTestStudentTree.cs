@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using BinaryTree;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Substance;
+using Comparer;
 
 namespace UnitTestTree
 {

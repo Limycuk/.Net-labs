@@ -12,7 +12,7 @@ namespace UnitTestTree
         public void Initialize()
         {
             List<string> strings = new List<string> { "d", "a", "f", "b", "c" };
-            Substance.StringComparer stringComparer = new Substance.StringComparer();
+            Comparer.StringComparer stringComparer = new Comparer.StringComparer();
             StringTree = new Tree<string>(stringComparer);
 
             foreach (string item in strings)
