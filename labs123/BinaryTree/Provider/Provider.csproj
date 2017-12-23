@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Comparer\Comparer.csproj" />
-    <ProjectReference Include="..\Provider\Provider.csproj" />
+    <ProjectReference Include="..\BinaryTree\BinaryTree.csproj" />
   </ItemGroup>
 
 </Project>

@@ -12,5 +12,6 @@ namespace Substance
         public string LastName { get; set; }
         public string TestName { get; set; }
         public int Mark { get; set; }
+        public DateTime TestDay { get; set; }
     }
 }
