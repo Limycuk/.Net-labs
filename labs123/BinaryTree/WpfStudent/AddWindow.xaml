@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfStudent.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfStudent"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="300" Width="300">
+    <Grid>
+        <Canvas Height="350" Width="525">
+            <Label Canvas.Left="15" Canvas.Top="9">Фамилия</Label>
+            <TextBox Name="LastName" Height="20" Width="120" Canvas.Left="94" Canvas.Top="12" />
+            <TextBox Name="FirstName" Height="20" Width="120" Canvas.Left="94" Canvas.Top="37" />
+            <TextBox Name="TestName" Height="20" Width="120" Canvas.Left="94" Canvas.Top="62" />
+            <TextBox Name="Mark" Height="20" Width="120" Canvas.Left="94" Canvas.Top="87" />
+            <Button x:Name="crete" Content="Добавить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="199" Click="onAdd" Canvas.Left="15" Canvas.Top="124"/>
+            <Button x:Name="exit" Content="Закрыть" HorizontalAlignment="Left" VerticalAlignment="Top" Width="199" Click="onExit" Canvas.Left="15" Canvas.Top="149"/>
+            <Label Canvas.Left="15" Canvas.Top="33" Content="Имя" RenderTransformOrigin="0.616,1.341"/>
+            <Label Canvas.Left="15" Canvas.Top="58" Content="Тест" RenderTransformOrigin="0.616,1.341"/>
+            <Label Canvas.Left="15" Canvas.Top="81" Content="Оценка" RenderTransformOrigin="0.616,1.341"/>
+        </Canvas>
+    </Grid>
+</Window>

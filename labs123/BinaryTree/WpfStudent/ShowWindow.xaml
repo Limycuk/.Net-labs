@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfStudent.ShowWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfStudent"
+        mc:Ignorable="d"
+        Title="ShowWindow" Height="600" Width="700">
+    <Grid RenderTransformOrigin="0.501,0.603">
+        <ComboBox x:Name="sort" SelectionChanged="onChangeSort" Margin="150,12,46.6,528.4">
+            <ComboBoxItem IsSelected="True" Content="Фамилия ASC"/>
+            <ComboBoxItem Content="Фамилия DESC"/>
+            <ComboBoxItem Content="Имя ASC"/>
+            <ComboBoxItem Content="Имя DESC"/>
+            <ComboBoxItem Content="Тест ASC"/>
+            <ComboBoxItem Content="Тест DESC"/>
+            <ComboBoxItem Content="Оценка ASC"/>
+            <ComboBoxItem Content="Оценка DESC"/>
+        </ComboBox>
+        <Label Content="Сортировка:" RenderTransformOrigin="0.616,1.341" Margin="24,10,506.6,528.4"/>
+
+        <Button x:Name="update" Content="Обновить" HorizontalAlignment="Left" Margin="24,106,0,0" VerticalAlignment="Top" Width="623" Click="onUpdate" Height="29"/>
+        <DataGrid x:Name="students" HorizontalAlignment="Left" Margin="24,159,0,0" VerticalAlignment="Top" Height="195" Width="623"/>
+        <Label Content="Оценка" RenderTransformOrigin="0.616,1.341" Margin="24,60,506.6,469.4"/>
+        <TextBox x:Name="Mark" Margin="424,60,46.6,481.4" />
+        <ComboBox x:Name="sign" SelectionChanged="onChangeSign" Margin="150,60,304.6,481.4">
+            <ComboBoxItem IsSelected="True" Content="Больше"/>
+            <ComboBoxItem Content="Равна"/>
+            <ComboBoxItem Content="Меньше" />
+        </ComboBox>
+    </Grid>
+</Window>
