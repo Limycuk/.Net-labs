@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6700504E-7056-4DB6-BF56-53A29284E46E}</ProjectGuid>
+    <ProjectGuid>{91499DA8-4DFE-47F1-8C42-2A61FD334DB7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>XMLParser</RootNamespace>
-    <AssemblyName>XMLParser</AssemblyName>
+    <RootNamespace>ThreadsHandler</RootNamespace>
+    <AssemblyName>ThreadsHandler</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />

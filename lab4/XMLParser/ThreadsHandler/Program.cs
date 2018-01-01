@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Configuration;
 
-namespace XMLParser
+namespace ThreadsHandler
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(ConfigurationManager.AppSettings["XPath"]);
-            Console.ReadKey();
         }
     }
 }
