@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6700504E-7056-4DB6-BF56-53A29284E46E}</ProjectGuid>
+    <ProjectGuid>{EC6891B8-4C56-4ED9-B0FA-D7F19521AFAD}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>XMLParser</RootNamespace>
     <AssemblyName>XMLParser</AssemblyName>
@@ -48,6 +48,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Substance\Substance.csproj">
+      <Project>{288B8CDE-351C-45EA-9B45-B7B21B676F16}</Project>
+      <Name>Substance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XmlConsoleInterface\ConsoleInterface.csproj">
+      <Project>{9C2343CF-ADB6-4C99-837E-4B6BF4DE0CBC}</Project>
+      <Name>ConsoleInterface</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
