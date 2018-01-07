@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Behaviours\Behaviours.csproj" />
+    <ProjectReference Include="..\Bulbs\Bulbs.csproj" />
+  </ItemGroup>
+
+</Project>
