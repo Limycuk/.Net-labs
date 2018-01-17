@@ -25,6 +25,8 @@ namespace BankAccountsDB
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+            builder.Entity<User>().HasMany(u => u.Accounts);
+            builder.Entity<Card>().HasMany(u => u.Accounts);
         }
     }
 }

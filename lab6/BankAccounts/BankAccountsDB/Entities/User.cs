@@ -9,10 +9,7 @@ namespace BankAccountsDB.Entities
     [Table("User")]
     public class User : IEntityBase 
     {
-        public User()
-        {
-            Accounts = new HashSet<Account>();
-        }
+        
         [Key]
         public int Id { get; set; }
 

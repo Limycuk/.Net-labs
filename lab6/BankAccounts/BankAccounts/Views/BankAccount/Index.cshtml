@@ -1,0 +1,38 @@
+﻿@using BankAccountsDB.Entities;
+
+@{
+    ViewData["Title"] = "Bank Accounts Page";
+    List<Account> BankAccounts = (List<Account>)ViewData["BankAccounts"];
+}
+
+<h1>Bank Accounts:</h1>
+<p><a asp-area="" asp-controller="BankAccount" asp-action="Create">Create Bank Account</a></p>
+<table>
+    <tr>
+        <th><p>Number&nbsp;</p></th>
+        <th><p>Amount&nbsp;</p></th>
+        <th><p>Points&nbsp;</p></th>
+        <th><p>First Name&nbsp;</p></th>
+        <th><p>Last Name&nbsp;</p></th>
+        <th><p>Email&nbsp;</p></th>
+        <th><p>Card Name&nbsp;</p></th>
+        <th><p>Card Balance Coefficient&nbsp;</p></th>
+        <th><p>Card Profit Cofficient&nbsp;</p></th>
+        <th><p>Actions</p></th>
+    </tr>
+    @foreach (Account account in @BankAccounts)
+    {
+        <tr>
+            <td><p>@account.Number &nbsp;</p></td>
+            <td><p>@account.Amount &nbsp;</p></td>
+            <td><p>@account.Points &nbsp;</p></td>
+            <td><p>@account.User.FirstName &nbsp;</p></td>
+            <td><p>@account.User.LastName &nbsp;</p></td>
+            <td><p>@account.User.Email &nbsp;</p></td>
+            <td><p>@account.Card.Name &nbsp;</p></td>
+            <td><p>@account.Card.BalanceCoefficient &nbsp;</p></td>
+            <td><p>@account.Card.ProfitCoefficient &nbsp;</p></td>
+            <td>@Html.ActionLink("Close", "Delete", "BankAccount", new { id = account.Id }) &nbsp; @Html.ActionLink("Manage Money", "ManageMoney", "BankAccount", new { id = account.Id })</td>
+        </tr>
+    }
+</table>

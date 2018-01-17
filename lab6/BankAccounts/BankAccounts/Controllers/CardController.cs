@@ -33,7 +33,7 @@ namespace BankAccounts.Controllers
         // POST: User/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<ActionResult> Create(IFormCollection collection)
         {
             try
             {
@@ -41,8 +41,8 @@ namespace BankAccounts.Controllers
                 card.Name = collection["Name"].ToString();
                 card.BalanceCoefficient = Convert.ToInt32(collection["BalanceCoefficient"].ToString());
                 card.ProfitCoefficient = Convert.ToInt32(collection["ProfitCoefficient"].ToString());
-                _cardRepository.Create(card);
-                _cardRepository.Save();
+                await _cardRepository.Create(card);
+                await _cardRepository.Save();
                 return RedirectToAction(nameof(Index));
             }
             catch

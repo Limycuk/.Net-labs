@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BankAccountsDB;
+using BankNumberGenerator;
+using BonusCalculator.js;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -27,6 +29,9 @@ namespace BankAccounts
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc();
             services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
+            services.AddScoped<IRandomGenerator, RandomGenerator>();
+            services.AddScoped<IBankAccountBonusCalculator, BankAccountBonusCalculator>();
+            services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
         }
 

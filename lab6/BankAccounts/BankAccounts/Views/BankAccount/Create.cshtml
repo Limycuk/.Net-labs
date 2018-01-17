@@ -1,0 +1,43 @@
+﻿@using BankAccountsDB.Entities;
+
+@{
+    ViewData["Title"] = "Create";
+    string AccountNumber = (string)ViewData["AccountNumber"];
+    SelectList Users = (SelectList)ViewData["Users"];
+    SelectList Cards = (SelectList)ViewData["Cards"];
+}
+
+<h2>Create</h2>
+@using (Html.BeginForm("Create", "BankAccount", FormMethod.Post))
+{
+<table>
+    <tr>
+        <td><p>Account Number: </p></td>
+        <td>
+            <p>&nbsp;@AccountNumber</p>
+            <input type="hidden" name="Number" value="@AccountNumber" />
+        </td>
+    </tr>
+    <tr>
+        <td><p>Initial Amount: </p></td>
+        <td><input type="number" name="Amount" required /> </td>
+    </tr>
+    <tr>
+        <td><p>User: </p></td>
+        <td>
+            @Html.DropDownList("User", Users as SelectList)
+        </td>
+    </tr>
+    <tr>
+        <td><p>Card: </p></td>
+        <td>
+            @Html.DropDownList("Card", Cards as SelectList)
+        </td>
+    </tr>
+    <tr>
+        <td><input type="submit" value="Отправить" /> </td>
+        <td></td>
+    </tr>
+</table>
+}
+

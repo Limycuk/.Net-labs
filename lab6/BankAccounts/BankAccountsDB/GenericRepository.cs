@@ -23,7 +23,7 @@ namespace BankAccountsDB
     }
 
     public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class, IEntityBase {
-        private readonly IApplicationDbContext _dbContext;
+        protected readonly IApplicationDbContext _dbContext;
         public GenericRepository(IApplicationDbContext dbContext) {
             _dbContext = dbContext;
         }

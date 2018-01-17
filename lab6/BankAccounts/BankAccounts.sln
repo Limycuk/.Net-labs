@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccounts", "BankAccounts\BankAccounts.csproj", "{7BD7E6CA-5237-401E-ADF1-39B89F5E0EDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAccounts", "BankAccounts\BankAccounts.csproj", "{7BD7E6CA-5237-401E-ADF1-39B89F5E0EDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccountsDB", "BankAccountsDB\BankAccountsDB.csproj", "{D549AD9B-BDAE-40D9-88BE-2F43A40D0AC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAccountsDB", "BankAccountsDB\BankAccountsDB.csproj", "{D549AD9B-BDAE-40D9-88BE-2F43A40D0AC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankNumberGenerator", "BankNumberGenerator\BankNumberGenerator.csproj", "{8CB4781E-36AC-49C2-9605-2D1C67B8DD4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BonusCalculator.js", "BonusCalculator.js\BonusCalculator.js.csproj", "{89E00E8C-27F7-4293-BB2B-90E523267C00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{D549AD9B-BDAE-40D9-88BE-2F43A40D0AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D549AD9B-BDAE-40D9-88BE-2F43A40D0AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D549AD9B-BDAE-40D9-88BE-2F43A40D0AC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CB4781E-36AC-49C2-9605-2D1C67B8DD4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CB4781E-36AC-49C2-9605-2D1C67B8DD4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CB4781E-36AC-49C2-9605-2D1C67B8DD4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CB4781E-36AC-49C2-9605-2D1C67B8DD4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89E00E8C-27F7-4293-BB2B-90E523267C00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89E00E8C-27F7-4293-BB2B-90E523267C00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89E00E8C-27F7-4293-BB2B-90E523267C00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89E00E8C-27F7-4293-BB2B-90E523267C00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

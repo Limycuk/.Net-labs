@@ -32,7 +32,7 @@ namespace BankAccounts.Controllers
         // POST: User/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<ActionResult> Create(IFormCollection collection)
         {
             try
             {
@@ -40,8 +40,8 @@ namespace BankAccounts.Controllers
                 user.FirstName = collection["FirstName"].ToString();
                 user.LastName = collection["LastName"].ToString();
                 user.Email = collection["Email"].ToString();
-                _userRepository.Create(user);
-                _userRepository.Save();
+                await _userRepository.Create(user);
+                await _userRepository.Save();
                 return RedirectToAction(nameof(Index));
             }
             catch
