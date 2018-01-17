@@ -7,7 +7,7 @@ using System.Text;
 namespace BankAccountsDB.Entities
 {
     [Table("User")]
-    public class User
+    public class User : IEntityBase 
     {
         public User()
         {

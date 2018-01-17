@@ -1,0 +1,24 @@
+﻿@using BankAccountsDB.Entities;
+
+@{
+    ViewData["Title"] = "User Page";
+    List<User> Users = (List<User>)ViewData["Users"];
+}
+
+<h1>Users:</h1>
+<p><a asp-area="" asp-controller="User" asp-action="Create">Create User</a></p>
+<table>
+    <tr>
+        <th><p>First Name</p></th>
+        <th><p>Last Name</p></th>
+        <th><p>Email</p></th>
+    </tr>
+    @foreach (User user in @Users)
+    {
+    <tr>
+        <td><p>@user.FirstName</p></td>
+        <td><p>@user.LastName</p></td>
+        <td><p>@user.Email</p></td>
+    </tr>
+    }
+</table>

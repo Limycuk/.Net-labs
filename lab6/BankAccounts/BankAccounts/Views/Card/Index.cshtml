@@ -1,0 +1,24 @@
+﻿@using BankAccountsDB.Entities;
+
+@{
+    ViewData["Title"] = "Card Page";
+    List<Card> Cards = (List<Card>)ViewData["Cards"];
+}
+
+<h1>Cards:</h1>
+<p><a asp-area="" asp-controller="Card" asp-action="Create">Create Card</a></p>
+<table>
+    <tr>
+        <th><p>Name</p></th>
+        <th><p>Ballance Coeficient</p></th>
+        <th><p>Profit Coefficient</p></th>
+    </tr>
+    @foreach (Card card in @Cards)
+    {
+        <tr>
+            <td><p>@card.Name</p></td>
+            <td><p>@card.BalanceCoefficient</p></td>
+            <td><p>@card.ProfitCoefficient</p></td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+@using (Html.BeginForm("Create", "User", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td><p>First Name: </p></td>
+            <td><input type="text" name="FirstName" required /> </td>
+        </tr>
+        <tr>
+            <td><p>Last Name:</p></td>
+            <td><input type="text" name="LastName" required /> </td>
+        </tr>
+        <tr>
+            <td><p>Email:</p></td>
+            <td><input type="email" name="Email" /> </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Отправить" /> </td>
+            <td></td>
+        </tr>
+    </table>
+}
+

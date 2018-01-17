@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+@using (Html.BeginForm("Create", "Card", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td><p>Name: </p></td>
+            <td><input type="text" name="Name" required /> </td>
+        </tr>
+        <tr>
+            <td><p>Balance Coefficient:</p></td>
+            <td><input type="number" name="BalanceCoefficient" required /> </td>
+        </tr>
+        <tr>
+            <td><p>Profit Coefficient:</p></td>
+            <td><input type="number" name="ProfitCoefficient" /> </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Отправить" /> </td>
+            <td></td>
+        </tr>
+    </table>
+}
+
